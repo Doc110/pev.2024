@@ -1,0 +1,55 @@
+/* Couleurs de base */
+:root {
+  --islamic-green: #008000;
+  --islamic-white: #FFFFFF;
+  --islamic-black: #000000;
+}
+
+/* Arrière-plan vert cristallisé */
+body {
+  background: var(--islamic-green);
+  background-image: radial-gradient(circle, rgba(255,255,255,0.2) 20%, transparent 20%),
+                    radial-gradient(circle, rgba(255,255,255,0.2) 20%, transparent 20%);
+  background-size: 30px 30px;
+  background-position: 0 0, 15px 15px;
+}
+
+/* Typographie */
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Scheherazade New', serif;
+  color: var(--islamic-white);
+}
+
+p {
+  font-family: 'Arial', sans-serif;
+  color: var(--islamic-white);
+}
+
+/* Symboles islamiques */
+.symbol {
+  font-family: 'Islamic Symbols', sans-serif;
+  font-size: 2em;
+  color: var(--islamic-white);
+}
+
+/* Motifs et décorations */
+.border-pattern {
+  border: 2px solid var(--islamic-white);
+  border-image: repeating-linear-gradient(45deg, var(--islamic-green), var(--islamic-green) 10px, var(--islamic-white) 10px, var(--islamic-white) 20px) 20;
+}
+
+/* Contenu culturel */
+.cultural-content {
+  background: rgba(0, 0, 0, 0.5);
+  padding: 20px;
+  border-radius: 10px;
+  color: var(--islamic-white);
+}
+
+/* Accessibilité et respect */
+.respectful-design {
+  text-align: center;
+  padding: 10px;
+  background: var(--islamic-black);
+  color: var(--islamic-white);
+}

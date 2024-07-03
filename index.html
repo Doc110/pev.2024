@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plateforme de Suivi</title>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <h1>Bienvenue sur notre plateforme</h1>
+    <form id="dataForm">
+        <label for="dob">Date de naissance :</label>
+        <input type="date" id="dob" name="dob" required>
+        
+        <label for="consultDate">Date de consultation :</label>
+        <input type="date" id="consultDate" name="consultDate" required>
+        <button type="button" onclick="calculateAge()">Calculer l'Âge</button>
+        <div id="ageDisplay"></div>
+        
+        <label for="weight">Poids de naissance (en grammes) :</label>
+        <input type="number" id="weight" name="weight" required>
+
+        <label for="hbsPositive">Mère Hbs positive :</label>
+        <select id="hbsPositive" name="hbsPositive" required>
+            <option value="non">Non</option>
+            <option value="oui">Oui</option>
+        </select>
+
+        <h2>Vaccinations</h2>
+        
+        <div class="vaccine">
+            <label for="bcg">BCG :</label>
+            <select id="bcg" name="bcg" required>
+                 <option value="non">Non</option>
+                 <option value="oui">Oui</option>
+            </select>
+            <label for="bcgDate">Date de vaccination :</label>
+            <input type="date" id="bcgDate" name="bcgDate">
+        </div>
+        
+        <div class="vaccine">
+            <label for="hbv">HBV :</label>
+            <select id="hbv" name="hbv" required>
+                 <option value="non">Non</option>
+                 <option value="oui">Oui</option>
+            </select>
+            <label for="hbvDate">Date de vaccination :</label>
+            <input type="date" id="hbvDate" name="hbvDate">
+        </div>
+        
+        <div class="vaccine">
+            <label for="hexap1vpo">Hexap1+VPO :</label>
+            <select id="hexap1vpo" name="hexap1vpo" required>
+                 <option value="non">Non</option>
+                 <option value="oui">Oui</option>
+            </select>
+            <label for="hexap1vpoDate">Date de vaccination :</label>
+            <input type="date" id="hexap1vpoDate" name="hexap1vpoDate">
+        </div>
+        
+        <div class="vaccine">
+            <label for="hexap2vpo">Hexap2+VPO :</label>
+            <select id="hexap2vpo" name="hexap2vpo" required>
+                 <option value="non">Non</option>
+                 <option value="oui">Oui</option>
+            </select>
+            <label for="hexap2vpoDate">Date de vaccination :</label>
+            <input type="date" id="hexap2vpoDate" name="hexap2vpoDate">
+        </div>
+        
+        <div class="vaccine">
+            <label for="hexaprapvpo">Hexaprap+VPO :</label>
+            <select id="hexaprapvpo" name="hexaprapvpo" required>
+                 <option value="non">Non</option>
+                 <option value="oui">Oui</option>
+            </select>
+            <label for="hexaprapvpoDate">Date de vaccination :</label>
+            <input type="date" id="hexaprapvpoDate" name="hexaprapvpoDate">
+        </div>
+        
+        <div class="vaccine">
+            <label for="pneump1">Pneumo1 :</label>
+            <select id="pneump1" name="pneump1" required>
+                 <option value="non">Non</option>
+                 <option value="oui">Oui</option>
+            </select>
+            <label for="pneump1Date">Date de vaccination :</label>
+            <input type="date" id="pneump1Date" name="pneump1Date">
+        </div>
+        
+        <div class="vaccine">
+            <label for="pneump2">Pneumo2 :</label>
+            <select id="pneump2" name="pneump2" required>
+                 <option value="non">Non</option>
+                 <option value="oui">Oui</option>
+            </select>
+            <label for="pneump2Date">Date de vaccination :</label>
+            <input type="date" id="pneump2Date" name="pneump2Date">
+        </div>
+        
+        <div class="vaccine">
+            <label for="pneumprap">Pneumrap :</label>
+            <select id="pneumprap" name="pneumprap" required>
+                 <option value="non">Non</option>
+                 <option value="oui">Oui</option>
+            </select>
+            <label for="pneumprapDate">Date de vaccination :</label>
+            <input type="date" id="pneumprapDate" name="pneumprapDate">
+        </div>
+        
+        <div class="vaccine">
+            <label for="ror1">ROR1 :</label>
+            <select id="ror1" name="ror1" required>
+                 <option value="non">Non</option>
+                 <option value="oui">Oui</option>
+            </select>
+            <label for="ror1Date">Date de vaccination :</label>
+            <input type="date" id="ror1Date" name="ror1Date">
+        </div>
+        
+        <div class="vaccine">
+            <label for="ror2">ROR2 :</label>
+            <select id="ror2" name="ror2" required>
+                 <option value="non">Non</option>
+                 <option value="oui">Oui</option>
+            </select>
+            <label for="ror2Date">Date de vaccination :</label>
+            <input type="date" id="ror2Date" name="ror2Date">
+        </div>
+
+        <button type="button" onclick="submitForm()">Entrer</button>
+        <button type="reset">Effacer les Informations</button>
+    </form>
+</body>
+</html>
